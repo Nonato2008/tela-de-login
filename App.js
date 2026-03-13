@@ -26,15 +26,8 @@ export default function App() {
 
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <KeyboardAvoidingView
-        style={styles.safeAerea}
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-        keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 20}
-      >
-
 
         <View style={styles.card}>
-
 
           <Text style={styles.titulo}>CADASTRO</Text>
 
@@ -81,7 +74,6 @@ export default function App() {
 
         </View>
 
-      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 }
@@ -102,6 +94,7 @@ const styles = StyleSheet.create({
 
   },
   card: {
+    width: "85%",
     backgroundColor: "#260138",
     borderRadius: 10,
     padding: 15,
